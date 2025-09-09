@@ -10,6 +10,7 @@
     --secondary-text-color2: hsla(0, 0%, 100%, 0.4);
     --secondary-text-color3: hsla(0, 0%, 100%, 0.1);
     --card-color1: hsla(0, 0%, 30%, 0.79);
+    --card-color2: hsla(0, 0%, 64%, 0);
     --f1: Helvetica, Arial, sans-serif;
     --f2: "Roboto Mono", monospace;
     --h1: 700 8.15rem / 7rem var(--f1);
@@ -56,6 +57,7 @@ body {
     background-color: var(--base-bg-color2);
     color: var(--base-text-color1);
     position: relative;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -99,6 +101,7 @@ h5,
     letter-spacing: var(--gap0);
     text-transform: uppercase;
     margin-left: 30px;
+    width: 75%;
 }
 
 p,
@@ -360,7 +363,40 @@ a:hover:after {
 }
 
 .icon-box {
-    width: 100px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box .round-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: roundtext 10s linear infinite;
+}
+
+@keyframes roundtext {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.round-text span {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform-origin: 0 76px;
+    font-size: 10px;
+    white-space: pre;
 }
 
 .bottom-nav-icon {
@@ -406,9 +442,12 @@ a:hover:after {
 /* clein section */
 .client-sub-row li {
     list-style: none;
-    padding: 2.5rem 0.2rem;
+    padding: 1rem;
     border: 1px solid;
-    /* border-radius: 6px; */
+    background-color: var(--card-color2);
+    transition: 0.3s background-color;
+}
+.client-sub-row li:hover{
     background-color: var(--card-color1);
 }
 
@@ -435,6 +474,7 @@ a:hover:after {
 .sub-work-row {
     display: flex;
     flex-direction: row;
+    border-top: 1px solid;
 }
 
 .work-title {
@@ -450,6 +490,15 @@ a:hover:after {
 
 
 /* services section */
+.card-head{
+    height: 100%;
+}
+.sub-ss-col {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .sub-ss-row {
     display: grid;
