@@ -113,9 +113,15 @@
 
     .menu-body-btn {
         position: fixed;
-        top: 0.6%;
-        left: 93%;
+        top: 2%;
+        /* left: 85%; */
         z-index: 1;
+        right: 4%;
+        /* width: 6%; */
+        /* margin: 15px; */
+        /* border: 1px solid; */
+        display: flex;
+        justify-self: flex-end;
     }
 
 
@@ -193,4 +199,5 @@ h4, .h4 {
     text-transform: uppercase;
 }
 }
+
 
