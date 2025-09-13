@@ -72,7 +72,9 @@
         --h2: 500 8vw / 8vw var(--f1);
         --h3: 500 5vw / 5vw var(--f1);
         --h4: 500 4vw / 4vw var(--f1);
-        --p: 100 0.91rem / 1.2rem var(--f1);
+            --p: 400 1rem / 1.5rem var(--f1);
+          --p2: 200 0.85rem / 1rem var(--f1);
+          --p3: 200 0.65rem / .8rem var(--f1);
     }
 
     .container-box {
@@ -199,5 +201,6 @@ h4, .h4 {
     text-transform: uppercase;
 }
 }
+
 
 
