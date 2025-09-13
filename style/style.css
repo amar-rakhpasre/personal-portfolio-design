@@ -426,7 +426,7 @@ a:hover:after {
 .time-line-list {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 90%;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -572,5 +572,6 @@ a:hover:after {
 .fotter-nav .add-section {
     flex: 1 0 35%;
 }
+
 
 
