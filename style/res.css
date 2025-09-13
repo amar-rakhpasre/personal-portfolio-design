@@ -125,7 +125,10 @@
         display: flex;
         justify-self: flex-end;
     }
-
+      .round-text p{
+          font: var(--p3);
+          margin: var(--gap3) 0;
+      }
 
     /*  tech icons */
 
@@ -201,6 +204,7 @@ h4, .h4 {
     text-transform: uppercase;
 }
 }
+
 
 
 
