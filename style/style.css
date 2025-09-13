@@ -454,6 +454,7 @@ a:hover:after {
 .client-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .client-sub-row {
@@ -571,4 +572,5 @@ a:hover:after {
 .fotter-nav .add-section {
     flex: 1 0 35%;
 }
+
 
