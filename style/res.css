@@ -80,16 +80,23 @@
     }
 
     .left-side {
+        background: #21212194;
         position: absolute;
         top: 0;
-        left: 0;
+        /* left: 0; */
         height: 100%;
         flex: 1 0 20%;
         z-index: 999;
+        /* order: 1; */
+        /* right: 0%; */
+        width: 100%;
+        transition: 0.3s all;
     }
 
     .nav-postion {
         background-color: azure;
+        position: fixed;
+        right: 0;
     }
 
     .left-side.active {
@@ -107,7 +114,8 @@
     .menu-body-btn {
         position: fixed;
         top: 0.6%;
-        left: 2%;
+        left: 93%;
+        z-index: 1;
     }
 
 
@@ -185,3 +193,4 @@ h4, .h4 {
     text-transform: uppercase;
 }
 }
+
